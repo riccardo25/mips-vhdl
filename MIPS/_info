@@ -1,0 +1,285 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Eadder4
+Z0 w1508489434
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dD:/Repository/mips-vhdl
+Z6 8D:/Repository/mips-vhdl/adder4.vhd
+Z7 FD:/Repository/mips-vhdl/adder4.vhd
+l0
+L10
+V]GS?JL1L_H0YR[1:c:iB>3
+!s100 [7ODVNlHDPZLUfNKOeWD53
+Z8 OP;C;10.4a;61
+32
+Z9 !s110 1508502275
+!i10b 1
+Z10 !s108 1508502275.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/adder4.vhd|
+Z12 !s107 D:/Repository/mips-vhdl/adder4.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+Aarc_adder4
+R1
+R2
+R3
+R4
+DEx4 work 6 adder4 0 22 ]GS?JL1L_H0YR[1:c:iB>3
+l23
+L21
+V5kEX1JaGfQ4TJa62R5Q_n0
+!s100 ?T`7aS7VN1B50k[n]8SD`0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealu
+Z15 w1508505006
+R2
+R1
+R3
+R4
+R5
+Z16 8D:/Repository/mips-vhdl/ALU.vhd
+Z17 FD:/Repository/mips-vhdl/ALU.vhd
+l0
+L11
+V3Ym?4YJfmGXfe0l?3@4KT3
+!s100 zn9N2M9V3=371:@hD4TJQ3
+R8
+32
+Z18 !s110 1508505013
+!i10b 1
+Z19 !s108 1508505013.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/ALU.vhd|
+Z21 !s107 D:/Repository/mips-vhdl/ALU.vhd|
+!i113 1
+R13
+R14
+Aarc_alu
+R2
+R1
+R3
+R4
+DEx4 work 3 alu 0 22 3Ym?4YJfmGXfe0l?3@4KT3
+l38
+L25
+V4kZEY<^X2@YUeiAG?mV<S0
+!s100 leiW`GMb[Z8RCncWgOBYg0
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Ememory
+w1508508212
+R1
+R2
+R3
+R4
+R5
+8D:/Repository/mips-vhdl/memory.vhd
+FD:/Repository/mips-vhdl/memory.vhd
+l0
+L7
+VWWSeWNg0gWO3<Qozh2L2h2
+!s100 P^lAGW:oKd5BUaZSD[1[o2
+R8
+32
+!s110 1508508242
+!i10b 1
+!s108 1508508242.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/memory.vhd|
+!s107 D:/Repository/mips-vhdl/memory.vhd|
+!i113 1
+R13
+R14
+Emultiplexer
+Z22 w1508435753
+Z23 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z24 8D:/Repository/mips-vhdl/multiplexer.vhd
+Z25 FD:/Repository/mips-vhdl/multiplexer.vhd
+l0
+L10
+VWOSe1FTfNCd9KSL:4Hb9K2
+!s100 @5gN<VTUEFkHmQATeoR?<1
+R8
+32
+R9
+!i10b 1
+R10
+Z26 !s90 -reportprogress|300|-work|MIPS|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/multiplexer.vhd|
+Z27 !s107 D:/Repository/mips-vhdl/multiplexer.vhd|
+!i113 1
+Z28 o-work MIPS -2002 -explicit -O0
+R14
+Aarc_multiplexer
+R23
+R3
+R4
+DEx4 work 11 multiplexer 0 22 WOSe1FTfNCd9KSL:4Hb9K2
+l24
+L23
+VX1eo6ggXM?I7ZcZ`BHahA3
+!s100 h^dN:e=3:9@5cdUB`TOma1
+R8
+32
+R9
+!i10b 1
+R10
+R26
+R27
+!i113 1
+R28
+R14
+Eshiftleftby2
+Z29 w1508502162
+R1
+R2
+R3
+R4
+R5
+Z30 8D:/Repository/mips-vhdl/shifterleftby2.vhd
+Z31 FD:/Repository/mips-vhdl/shifterleftby2.vhd
+l0
+L10
+Va6Ok@SW9`]f1<L`[2l8;z1
+!s100 I6KkUTaFZ<o;ib00z?DXQ3
+R8
+32
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/shifterleftby2.vhd|
+Z33 !s107 D:/Repository/mips-vhdl/shifterleftby2.vhd|
+!i113 1
+R13
+R14
+Aarc_shiftleftby2
+R1
+R2
+R3
+R4
+DEx4 work 12 shiftleftby2 0 22 a6Ok@SW9`]f1<L`[2l8;z1
+l26
+L23
+VKeioC44f7^;O3BiSeKQ461
+!s100 j^C06ml?Rf;iN?];1kUUj3
+R8
+32
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 1
+R13
+R14
+Esignextend
+Z34 w1508492769
+R23
+R3
+R4
+R5
+Z35 8D:/Repository/mips-vhdl/signExtend.vhd
+Z36 FD:/Repository/mips-vhdl/signExtend.vhd
+l0
+L10
+Vo?b=>BPn<IHRUH4Tg3in61
+!s100 Xhb:P]MYKT41Sll=H5Zno2
+R8
+32
+R9
+!i10b 1
+R10
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/signExtend.vhd|
+Z38 !s107 D:/Repository/mips-vhdl/signExtend.vhd|
+!i113 1
+R13
+R14
+Aarc_signextend
+R23
+R3
+R4
+DEx4 work 10 signextend 0 22 o?b=>BPn<IHRUH4Tg3in61
+l27
+L23
+V<ib_0OO8:j5?AFl?4mo_X1
+!s100 KgU;b?B[6GzON0ok7i[`z2
+R8
+32
+R9
+!i10b 1
+R10
+R37
+R38
+!i113 1
+R13
+R14
+Etest_tb
+Z39 w1508502264
+R23
+R3
+R4
+R5
+Z40 8D:/Repository/mips-vhdl/Bench.vhd
+Z41 FD:/Repository/mips-vhdl/Bench.vhd
+l0
+L6
+VYQmbV6lJ`]`LMmRJh@0A80
+!s100 eKTWo[`KL=PW;QnA_1RRo0
+R8
+32
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-work|MIPS|-2002|-explicit|-stats=none|D:/Repository/mips-vhdl/Bench.vhd|
+Z43 !s107 D:/Repository/mips-vhdl/Bench.vhd|
+!i113 1
+R28
+R14
+Abehavior
+R23
+R3
+R4
+DEx4 work 7 test_tb 0 22 YQmbV6lJ`]`LMmRJh@0A80
+l63
+L9
+VU5D_m]k>S@i=Pg`EA_BCm1
+!s100 N:5504nEPjoS[m]VBJnWz0
+R8
+32
+R9
+!i10b 1
+R10
+R42
+R43
+!i113 1
+R28
+R14

@@ -1,0 +1,27 @@
+-- Written by Riccardo Fontanini
+-- 20/10/2017
+-- Take the input and add 4
+------------------------ LIBRERIE ---------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+----------------------- ENTITY --------------------------------------------
+entity adder4 is
+	-- use a generic to generalize the number of inputs/output defined as standard like 1
+	generic (n_in_out: integer := 32);
+
+	--port description
+	port (
+		input: in std_logic_vector(n_in_out-1 downto 0);
+		z: out std_logic_vector(n_in_out-1 downto 0)
+	);
+end adder4;
+
+architecture arc_adder4 of adder4 is
+
+begin
+
+	z <= input + "100";
+
+end arc_adder4
