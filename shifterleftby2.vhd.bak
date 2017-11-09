@@ -15,8 +15,8 @@ entity shiftleftby2 is
 
 	--port description
 	port (
-		input: in std_logic_vector(n_in-1 downto 0);
-		z: out std_logic_vector(n_out-1 downto 0)
+		input: in std_ulogic_vector(n_in-1 downto 0);
+		z: out std_ulogic_vector(n_out-1 downto 0)
 	);
 end shiftleftby2;
 
@@ -25,11 +25,11 @@ architecture arc_shiftleftby2 of shiftleftby2 is
 
 begin
 	process(input)
-	constant ZERO: std_logic_vector(n_out-1 downto 0) := (others => '0'); -- a way to set all constant to zero
+	constant ZERO: std_ulogic_vector(n_out-1 downto 0) := (others => '0'); -- a way to set all constant to zero
 	begin 
 		if (n_in = n_out) then
 			z <= input(n_in-3 downto 0) & "00";
-		elsif(n_in == n_out - 2) then
+		elsif(n_in = n_out - 2) then
 			z <= "00" & (input(n_in-3 downto 0) & "00");
 		else
 			z <= ZERO;

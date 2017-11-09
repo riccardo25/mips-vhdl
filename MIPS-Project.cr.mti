@@ -1,4 +1,52 @@
-D:/Repository/mips-vhdl/memory.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/memory.vhd
+D:/Repository/mips-vhdl/signExtend.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/signExtend.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity signExtend
+-- Compiling architecture arc_signExtend of signExtend
+
+} {} {}} D:/Repository/mips-vhdl/datamemory.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/datamemory.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity datamemory
+-- Compiling architecture arc_datamemory of datamemory
+
+} {} {}} D:/Repository/mips-vhdl/ALUControl.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/ALUControl.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALUController
+-- Compiling architecture arc_ALUController of ALUController
+
+} {} {}} D:/Repository/mips-vhdl/Bench.vhd {1 {vcom -work MIPS -2002 -explicit -stats=none D:/Repository/mips-vhdl/Bench.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity test_tb
+-- Compiling architecture behavior of test_tb
+
+} {} {}} D:/Repository/mips-vhdl/ProgramCounter.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/ProgramCounter.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity PC
+-- Compiling architecture arc_PC of PC
+
+} {} {}} D:/Repository/mips-vhdl/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/memory.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,30 +55,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity memory
 -- Compiling architecture memory1 of memory
-** Error: D:/Repository/mips-vhdl/memory.vhd(27): Cannot resolve indexed name (type memory_array) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: D:/Repository/mips-vhdl/memory.vhd(29): Target type memory_array in signal assignment is different from expression type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Warning: D:/Repository/mips-vhdl/memory.vhd(29): (vcom-1272) Length of expected is 4; length of actual is 32.
 
-** Error: D:/Repository/mips-vhdl/memory.vhd(33): VHDL Compiler exiting
-
-} {10.0 12.0 14.0 15.0} {}} D:/Repository/mips-vhdl/shifterleftby2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/shifterleftby2.vhd
+} {} {}} D:/Repository/mips-vhdl/control.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/control.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity shiftleftby2
--- Compiling architecture arc_shiftleftby2 of shiftleftby2
-
-} {} {}} D:/Repository/mips-vhdl/signExtend.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/signExtend.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity signExtend
--- Compiling architecture arc_signExtend of signExtend
+-- Compiling entity controller
+-- Compiling architecture arc_controller of controller
 
 } {} {}} D:/Repository/mips-vhdl/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/ALU.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -51,6 +85,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity multiplexer
 -- Compiling architecture arc_multiplexer of multiplexer
 
+} {} {}} D:/Repository/mips-vhdl/and.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/and.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity and_port
+-- Compiling architecture arc_and_port of and_port
+
 } {} {}} D:/Repository/mips-vhdl/adder4.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/adder4.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -58,7 +102,28 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
 -- Compiling entity adder4
 -- Compiling architecture arc_adder4 of adder4
+
+} {} {}} D:/Repository/mips-vhdl/shifterleftby2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/shifterleftby2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity shiftleftby2
+-- Compiling architecture arc_shiftleftby2 of shiftleftby2
+
+} {} {}} D:/Repository/mips-vhdl/Registers.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Repository/mips-vhdl/Registers.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity registers
+-- Compiling architecture arc_registers of registers
 
 } {} {}}

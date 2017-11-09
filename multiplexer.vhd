@@ -13,8 +13,8 @@ entity multiplexer is
 	
 	--port description
 	port (
-		a: in std_logic_vector(n_in_out-1 downto 0);
-		b: in std_logic_vector(n_in_out-1 downto 0);
+		in_0: in std_logic_vector(n_in_out-1 downto 0);
+		in_1: in std_logic_vector(n_in_out-1 downto 0);
 		selector: in std_logic;
 		z: out std_logic_vector(n_in_out-1 downto 0)
 	);
@@ -23,6 +23,6 @@ end multiplexer;
 architecture arc_multiplexer of multiplexer is
 begin
 	
-	z <= a when (selector = '0') else b;
+	z <= in_0 when (selector = '0') else in_1;
 
 end arc_multiplexer;

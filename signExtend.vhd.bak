@@ -15,14 +15,14 @@ entity signExtend is
 
 	--port description
 	port (
-		input: in std_logic_vector(n_in-1 downto 0);
-		z: out std_logic_vector(n_out-1 downto 0)
+		input: in std_ulogic_vector(n_in-1 downto 0);
+		z: out std_ulogic_vector(n_out-1 downto 0)
 	);
 end signExtend;
 
 architecture arc_signExtend of signExtend is
 
-signal toappend: std_logic_vector (n_out-n_in-1 downto 0);
+signal toappend: std_ulogic_vector (n_out-n_in-1 downto 0);
 
 begin
 	--this process control data input make conversion
@@ -33,6 +33,10 @@ begin
 				z(i) <= '0';
 			end loop;
 		elsif input( n_in - 1 ) = '0' then
+			-- set append vector to 00000...
+			for i in 0 to (n_out - n_in -1) loop
+				toappend(i) <= '0';
+			end loop;
 			z <= toappend & input;
 		elsif input( n_in - 1 ) = '1' then
 			-- set append vector to 111111...

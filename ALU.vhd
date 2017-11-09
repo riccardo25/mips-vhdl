@@ -36,7 +36,8 @@ architecture arc_ALU of ALU is
 	signal exit_operation : std_logic_vector(n_in_out-1 downto 0);
 
 begin
-	process (a, b, ALUOp)
+	process
+	
 	begin
 		if(ALUOp = ADD_op) then
 			exit_operation <= a + b;
@@ -57,7 +58,7 @@ begin
 		end if;
 
 		ALUResult <= exit_operation;
-
+		wait for 1 ns;
 	end process;
 
 

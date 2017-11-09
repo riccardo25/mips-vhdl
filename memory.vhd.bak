@@ -1,33 +1,84 @@
---Memoria
+-- Written by Riccardo Fontanini
+-- 19/10/2017
+-- Take the input and shif it left by 2 units
+------------------------ LIBRERIE ---------------------------------------
 library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
-
+----------------------- ENTITY --------------------------------------------
 entity memory is
 	port
 	(
-		addr, data_write: in std_logic_vector (31 downto 0);
-		W, R, clk: in std_logic;
-		data_read: out std_logic_vector (31 downto 0)
+		address: in std_logic_vector (31 downto 0); --ADDRESS TO WRITE OR READ
+		data_write: in std_logic_vector (31 downto 0); -- DATA TO BE WRITTEN
+		memWrite: in std_logic; --HIGH FOR WRITING 
+		memRead: in std_logic; --HIGH FOR READING
+		--clk: in std_logic; -- CLOCK
+		data_read: out std_logic_vector (31 downto 0) --DATA FROM ADDRESS address
 	);
 end memory;
 
 architecture memory1 of memory is
-	type memory_array is array (3 downto 0) of std_logic;
-	type MEM is array (1 downto 0) of memory_array;
+	
+	--TYPE of memory section
+	type MEMORY_ARRAY is array (0 to 31) of std_logic_vector (31 downto 0);
+	
+	-- MEMORY
+	signal data: MEMORY_ARRAY := (
+X"00221820",
+X"00000000",--X"8C010000",	--LW reg1, offset (0); reg1 = 0, offset 0
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000", 
+X"00000000", 
+X"00000000",
+X"00000000",
+X"00000000");
 
-	signal data_mem: MEM := ("0000", "0000");
+
+	signal fakeaddress: std_logic_vector(31 downto 0):= (others => '0');
+	--GENERAL CONSTANTS
+	constant CONST_ZERO: std_logic_vector(31 downto 0):= (others => '0');
+		
 	
 	begin
-	process (clk)
-	begin
-		if(falling_edge(clk)) then
-			if( R = '1') then												--Lettura da memoria
-				data_read <= data_mem( conv_integer( unsigned( addr(6 downto 2))) );
-			elsif (W = '1') then 											--Scrittura in memoria
-				data_mem(conv_integer(addr(6 downto 2)))<= write_data;
-			end if;
-		end if;
-	end process;
+		process (address, memRead, data_write) 
+		begin
+				if( address(0) /= '0' and address(0) /= '1')then
+					data_read <= CONST_ZERO;
+				elsif(memRead = '1' AND memWrite = '1') then -- if both memREAD and memWRITE are ON, there is a problem, so I put 0 in OUTPUT
+					data_read <= CONST_ZERO;
+				elsif( memRead = '1') then	 --if I want to read data										
+					data_read <= data( conv_integer( unsigned( address ) )/4 );
+				elsif (memWrite = '1') then -- if I want to write data					
+					data( conv_integer( unsigned( address ) )/4 )<= data_write;
+			
+				end if;
+
+		end process;
+	
 end memory1;
