@@ -22,28 +22,26 @@ end signExtend;
 
 architecture arc_signExtend of signExtend is
 
-signal toappend: std_logic_vector (n_out-n_in-1 downto 0);
+
+
+constant CONST_ZERO: std_logic_vector(n_out-1 downto 0):= (others => '0');
+
+constant toappend_0: std_logic_vector (n_out-n_in-1 downto 0) := (others => '0');
+
+constant toappend_1: std_logic_vector (n_out-n_in-1 downto 0) := (others => '1');
 
 begin
 	--this process control data input make conversion
 	process (input)
 	begin
-		if n_out < n_in then
-			for i in 0 to (n_out - 1) loop -- if an error occured, set output to 0
-				z(i) <= '0';
-			end loop;
+		if (n_out < n_in or (input(0) /= '0' and input(0) /= '1') ) then
+			z <= CONST_ZERO;
 		elsif input( n_in - 1 ) = '0' then
 			-- set append vector to 00000...
-			for i in 0 to (n_out - n_in -1) loop
-				toappend(i) <= '0';
-			end loop;
-			z <= toappend & input;
+			z <= toappend_0 & input;
 		elsif input( n_in - 1 ) = '1' then
 			-- set append vector to 111111...
-			for i in 0 to (n_out - n_in -1) loop
-				toappend(i) <= '1';
-			end loop;
-			z <= toappend & input;
+			z <= toappend_1 & input;
 		end if;
 	end process;
 end arc_signExtend;

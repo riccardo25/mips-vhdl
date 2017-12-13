@@ -20,9 +20,9 @@ entity adder4 is
 end adder4;
 
 architecture arc_adder4 of adder4 is
-signal ciao: std_logic_vector (n_in_out-1 downto 0);
+signal zero: std_logic_vector (n_in_out-1 downto 0):= (others => '0');
 begin
-
 	z <=  input + "100";
+	
 
 end arc_adder4;

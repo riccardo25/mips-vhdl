@@ -23,10 +23,10 @@ architecture arc_PC of PC is
 	begin
 		process (clk) 
 		begin
-			if(falling_edge(clk) and (address_in(0) = '1' or address_in(0) ='0') ) then
-				address_out <= address_in;
-			elsif(falling_edge(clk)) then
+			if (address_in(0) /= '1' and address_in(0) /='0') then
 				address_out <= CONST_ZERO;
+			elsif(falling_edge(clk)) then
+				address_out <= address_in;
 			end if;
 		end process;
 	

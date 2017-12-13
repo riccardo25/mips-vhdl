@@ -83,7 +83,6 @@ architecture arc_controller of controller is
 				ALUOp <= ALU_DK; -- say to alu "Hi I'm Riccardo and need YOU, but I don't know why!"
 				MemWrite <= '0'; 
 				ALUSrc <= '0'; 
-				wait for 3 ns;
 				RegWrite <= '1'; 
 			elsif(Instruction = OP_BEQ) then
 				RegDest <= '0'; 

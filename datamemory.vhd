@@ -66,7 +66,7 @@ X"00000000");
 		
 	
 	begin
-		process (address, memRead, data_write) 
+		process (address, memRead, data_write, memWrite) 
 		begin
 				if( address(0) /= '0' and address(0) /= '1')then
 					data_read <= CONST_ZERO;

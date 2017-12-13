@@ -279,9 +279,9 @@ BEGIN
 
 	clock_process: process
 		begin
-		clock <= '1';
-		wait for 5 ns;
 		clock <= '0';
+		wait for 5 ns;
+		clock <= '1';
 		wait for 5 ns;
 	end process;
 
